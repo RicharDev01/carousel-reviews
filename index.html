@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Carousel Reviews</title>
-  
+
   <link rel="stylesheet" href="styles/style.css">
 
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  
+
   <main class="container">
 
     <h1 class="title">Our Reviews</h1>
@@ -19,22 +26,31 @@
     <article class="reviews">
 
       <section class="reviews-image">
-        <img src="" alt="">
+        <img src="./images/elizabeth.jpg" alt="">
       </section>
 
       <section class="reviews-info">
-        <p class="info-name">Susan Smith</p>
-        <p class="info-profession">Web Developer</p>
-      </section>
+        <p class="info-name">elizabeth Smith</p>
+        <p class="info-profession">Graphic Designer</p>
+      </section> 
 
       <section class="reviews-review">
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem culpa ullam minima unde labore delectus, est atque incidunt doloribus ipsam modi ea, voluptatum blanditiis pariatur quod ipsa cupiditate, eum tenetur!</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem culpa ullam minima unde labore
+          delectus, est atque incidunt doloribus ipsam modi ea, voluptatum blanditiis pariatur quod ipsa cupiditate, eum
+          tenetur!</p>
       </section>
 
       <section class="reviews-buttons">
         <div class="arrows">
-          <button class="arrow left">left</button>
-          <button class="arrow rigth">rigth</button>
+
+          <button class="arrow left">
+            <img src="./images/arrows_direction.svg">
+          </button>
+
+          <button class="arrow rigth">
+            <img src="./images/arrows_direction.svg">
+          </button>
+
         </div>
         <button class="surprise">Surprise Me</button>
       </section>
@@ -43,7 +59,12 @@
 
   </main>
 
+  <footer class="main-footer">
+    <p class="footer-content">Power By <a href="https://github.com/RicharDev01" target="_blank" title="Ricardo Pineda">RicharDev01</a></p>
+  </footer>
+
 
   <script src="./js/main.js"></script>
 </body>
+
 </html>

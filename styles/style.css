@@ -1,0 +1,146 @@
+:root {
+  --main-color: #48a6ea;
+  --color-text: #122c43;
+  --bg-color: #f0f5f8;
+  --white: #FFFFFF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'poppins', sans-serif;
+}
+
+html{ font-size: 62.50%; }
+body { 
+  background-color: var(--bg-color);
+  color: var(--color-text);
+}
+a { 
+  text-decoration: none; 
+  color: var(--main-color);
+}
+button { cursor: pointer; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 80vw;
+  margin: 0 auto;
+  height: 95vh;
+  border: 1px solid;
+}
+
+.title {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.title::after {
+  content: "";
+  
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: inline-block;
+  width: 8rem;
+  height: 0.5rem;
+
+  background-color: var(--main-color);
+}
+
+.reviews {
+  width: 70rem;
+  min-height: 40rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+
+.reviews-image{
+  width: 15rem;
+  height: 15rem;
+  margin: 1.5rem auto;
+
+  position: relative;
+
+}
+.reviews-image::before {
+  content: '❞';
+  position: absolute;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+
+  font-size: 4rem;
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+.reviews-image img { 
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: .8rem -.2rem 0 var(--main-color);
+}
+
+.info-name {
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.info-profession {
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.reviews-review {
+  margin-bottom: 1.5rem;
+  opacity: .8;
+}
+
+.surprise {
+  color: var(--main-color);
+  border: 0.2rem solid ;
+  outline: none;
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform .2s;
+}
+.surprise:active { transform: scale(.9); } 
+
+.arrows {margin-bottom: 1.5rem;}
+.arrow {
+  width: 5rem;
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  background-color: transparent;
+  transition: transform .2s;
+}
+.arrow img {display: block;}
+
+.rigth:active { transform: scale(.8); }
+.left { transform: rotate(180deg) scale(1);}
+.left:active { transform: rotate(180deg) scale(.8); }
+
+.main-footer {
+  text-align: center;
+}

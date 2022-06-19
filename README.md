@@ -7,7 +7,7 @@ El contenido del recuadro blanco, que seria el *carousel*, mostrara las distinta
 
 Hay tres botones *fechas* que me indicaran avanzar o retroceder al un contenido en concreto,  y el boton *surprise me* que mostrara aleatoriamente un contenido almacenado en el archivo js.
 
-![](./images/carrusel-review.jpg)
+![](./images/carousel-reviews.jpg)
 
 ## DESCARGAR PROYECTO
 Da click, en la parte superior derecha de este repositorio, al boton verde llamado *code*
